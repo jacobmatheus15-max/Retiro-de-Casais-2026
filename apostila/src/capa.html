@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Capa</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --green:#2F4A3A; --green2:#4E6B57; --gold:#B08D57; --cream:#F7F2E8; --ink:#33403A; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html,body { width:794px; height:1123px; background:var(--cream); }
+  body { position:relative; overflow:hidden; font-family:'Lato',sans-serif; color:var(--ink); }
+  .frame { position:absolute; inset:34px; border:1.5px solid var(--gold); }
+  .frame::after { content:""; position:absolute; inset:7px; border:0.75px solid var(--gold); opacity:.7; }
+  .content { position:absolute; inset:34px; display:flex; flex-direction:column; align-items:center; text-align:center; padding:120px 60px 70px; }
+  .kicker { font-size:13px; letter-spacing:6px; color:var(--gold); font-weight:700; }
+  .year { font-family:'Cormorant Garamond',serif; font-size:20px; letter-spacing:8px; color:var(--green2); margin-top:10px; }
+  .art { margin-top:50px; }
+  h1 { font-family:'Cormorant Garamond',serif; font-weight:500; color:var(--green); font-size:58px; line-height:1.02; margin-top:44px; }
+  h1 em { font-style:italic; font-weight:400; color:var(--gold); }
+  .sub { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:24px; color:var(--green2); margin-top:20px; }
+  .rule { width:120px; height:1px; background:var(--gold); margin:26px auto; position:relative; }
+  .rule::after { content:""; position:absolute; left:50%; top:-4px; width:8px; height:8px; background:var(--cream); border:1px solid var(--gold); transform:translateX(-50%) rotate(45deg); }
+  .desc { font-size:13px; letter-spacing:3px; color:var(--ink); font-weight:400; }
+  .author { font-size:13px; color:var(--green2); margin-top:8px; letter-spacing:1px; }
+  .fields { margin-top:auto; width:100%; display:flex; gap:28px; font-size:12px; letter-spacing:2px; color:var(--green2); }
+  .field { flex:1; text-align:left; }
+  .field.small { flex:0 0 120px; }
+  .field .line { border-bottom:1px solid var(--gold); height:30px; }
+  .field span { display:block; margin-top:6px; }
+</style>
+</head>
+<body>
+<div class="frame"></div>
+<div class="content">
+  <div class="kicker">RETIRO DE CASAIS</div>
+  <div class="year">— 2026 —</div>
+
+  <svg class="art" width="360" height="300" viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="arch"><path d="M40 245 V110 A110 110 0 0 1 260 110 V245 Z"/></clipPath>
+      <g id="leaf"><path d="M0 0 C6 -8 18 -9 24 0 C18 9 6 8 0 0 Z" fill="#4E6B57"/><path d="M1 0 H22" stroke="#F7F2E8" stroke-width=".8"/></g>
+    </defs>
+    <!-- treliça -->
+    <g clip-path="url(#arch)" stroke="#B08D57" stroke-width="1" opacity=".55">
+      <path d="M-200 245 L100 -55 M-170 245 L130 -55 M-140 245 L160 -55 M-110 245 L190 -55 M-80 245 L220 -55 M-50 245 L250 -55 M-20 245 L280 -55 M10 245 L310 -55 M40 245 L340 -55 M70 245 L370 -55 M100 245 L400 -55 M130 245 L430 -55 M160 245 L460 -55"/>
+      <path d="M500 245 L200 -55 M470 245 L170 -55 M440 245 L140 -55 M410 245 L110 -55 M380 245 L80 -55 M350 245 L50 -55 M320 245 L20 -55 M290 245 L-10 -55 M260 245 L-40 -55 M230 245 L-70 -55 M200 245 L-100 -55 M170 245 L-130 -55 M140 245 L-160 -55"/>
+    </g>
+    <path d="M40 245 V110 A110 110 0 0 1 260 110 V245" stroke="#B08D57" stroke-width="2"/>
+    <!-- videira -->
+    <path d="M60 245 C70 200 40 170 75 135 C105 105 95 70 135 50 C165 35 185 45 205 30" stroke="#2F4A3A" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M240 245 C230 205 262 175 228 140 C200 112 212 80 175 62" stroke="#2F4A3A" stroke-width="2.2" stroke-linecap="round"/>
+    <use href="#leaf" transform="translate(62 200) rotate(-150)"/>
+    <use href="#leaf" transform="translate(58 168) rotate(-20)"/>
+    <use href="#leaf" transform="translate(78 134) rotate(-160)"/>
+    <use href="#leaf" transform="translate(100 98) rotate(-40)"/>
+    <use href="#leaf" transform="translate(128 54) rotate(-170)"/>
+    <use href="#leaf" transform="translate(170 40) rotate(-60)"/>
+    <use href="#leaf" transform="translate(238 205) rotate(-30)"/>
+    <use href="#leaf" transform="translate(244 165) rotate(-165)"/>
+    <use href="#leaf" transform="translate(222 132) rotate(-15)"/>
+    <use href="#leaf" transform="translate(205 92) rotate(-150)"/>
+    <!-- cachos de uva -->
+    <g fill="#B08D57">
+      <circle cx="88" cy="150" r="4"/><circle cx="96" cy="150" r="4"/><circle cx="92" cy="157" r="4"/><circle cx="100" cy="157" r="4"/><circle cx="96" cy="164" r="4"/>
+      <circle cx="208" cy="150" r="4"/><circle cx="216" cy="150" r="4"/><circle cx="204" cy="157" r="4"/><circle cx="212" cy="157" r="4"/><circle cx="208" cy="164" r="4"/>
+    </g>
+    <!-- alianças -->
+    <circle cx="134" cy="182" r="30" stroke="#B08D57" stroke-width="5"/>
+    <circle cx="166" cy="182" r="30" stroke="#2F4A3A" stroke-width="5"/>
+    <path d="M134 152 A30 30 0 0 1 164 182" stroke="#B08D57" stroke-width="5"/>
+  </svg>
+
+  <h1>Espiritualidade Profunda<br>&amp; <em>Maturidade Relacional</em></h1>
+  <div class="sub">Apostila do Casal</div>
+  <div class="rule"></div>
+  <div class="desc">ROTEIRO DAS PALESTRAS • ATIVIDADES DE APOIO</div>
+  <div class="author">Baseado na obra de Peter Scazzero</div>
+
+  <div class="fields">
+    <div class="field"><div class="line"></div><span>NOME DO CASAL</span></div>
+    <div class="field small"><div class="line"></div><span>MESA</span></div>
+  </div>
+</div>
+</body>
+</html>
